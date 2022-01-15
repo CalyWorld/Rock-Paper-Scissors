@@ -53,19 +53,10 @@ function playRound(playerSelection, computerSelection){
 }
   let playerSelection = userNum;
   let computerSelection = computerPlay();
-
- 
-
-function game(){
-
-  for(let i = 0; i<=5; i++){
-    const playerScore = playerSelection();
-    const computerScore = computerSelection();
-  
   let result = console.log(playRound(playerScore, computerScore));
-  }
   
-}
+  
+
 
 
 
