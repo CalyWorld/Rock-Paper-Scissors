@@ -11,14 +11,34 @@ function computerPlay(){
       return "Scissors";
     }
 }
-var userNum = prompt("Enter a string").toLowerCase();
+
+  let playerScore = 0;
+  let computerScore = 0;
+  let drawScore = 0;
+
 function playRound(playerSelection, computerSelection){
-
- let playerScore = 0;
- let  computerScore = 0;
- let  drawScore=0;
-
-  if(playerSelection === computerSelection){
+  
+  if((playerSelection === "rock") && (computerSelection === "Rock")){
+    drawScore++;
+      return (
+        "DRAW - player chose: " +
+                    playerSelection +
+                                  " &" +
+                                     " computer chose: " +
+                            computerSelection
+            );
+  }
+  else if((playerSelection === "paper") && (computerSelection === "Paper")){
+    drawScore++;
+      return (
+        "DRAW - player chose: " +
+                    playerSelection +
+                                  " &" +
+                                     " computer chose: " +
+                            computerSelection
+            );
+  }
+  else if((playerSelection === "scissors") && (computerSelection === "Scissors")){
     drawScore++;
       return (
         "DRAW - player chose: " +
@@ -88,18 +108,25 @@ function playRound(playerSelection, computerSelection){
                                      " computer chose: " +
                             computerSelection
     );
-  }
+  }  
 }
-  
-  let computerSelection = computerPlay();
-  let playerSelection = userNum;
-  
-  
-  function game(){
-   console.log(playRound(playerSelection, computerSelection));
-    console.log(playRound(playerSelection, computerSelection));
-     console.log(playRound(playerSelection, computerSelection));
-   
-   }
 
-   game();
+   for(let i=1; i<=5; i++){
+    let playerSelection = prompt(("Enter a string").toLowerCase());
+    let computerSelection = computerPlay();
+    console.log(playRound(playerSelection, computerSelection));
+    
+   }
+    console.log ("draw score " + drawScore);
+    console.log ("player score " + playerScore);  
+    console.log ("computer score " + computerScore);  
+    
+   
+     
+    
+   
+  
+ 
+  
+
+   
