@@ -110,7 +110,7 @@ function playRound(playerSelection, computerSelection){
     );
   }  
 }
-
+  function game(){
    for(let i=1; i<=5; i++){
     let playerSelection = prompt(("Enter a string").toLowerCase());
     let computerSelection = computerPlay();
@@ -119,8 +119,10 @@ function playRound(playerSelection, computerSelection){
    }
     console.log ("draw score " + drawScore);
     console.log ("player score " + playerScore);  
-    console.log ("computer score " + computerScore);  
-    
+    console.log ("player score " + computerScore);  
+   }
+
+   game(); 
    
      
     
