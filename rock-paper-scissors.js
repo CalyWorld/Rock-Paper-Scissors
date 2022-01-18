@@ -115,20 +115,16 @@ function playRound(playerSelection, computerSelection){
     let playerSelection = prompt(("Enter a string").toLowerCase());
     let computerSelection = computerPlay();
     console.log(playRound(playerSelection, computerSelection));
-    
    }
-    console.log ("draw score " + drawScore);
-    console.log ("player score " + playerScore);  
-    console.log ("player score " + computerScore);  
-   }
+    if(playerScore===computerScore){
+     console.log("ITS A TIE, draw score: " + drawScore + " &" + " Player score: " + playerScore + " &" + " computer Score: " + computerScore);
+    }
+     else if(playerScore>computerScore){
+    console.log ("PLAYER WINS and player score: " + playerScore + " &" + " computer Score: " + computerScore + " draw Score: " + drawScore);  
 
-   game(); 
-   
-     
-    
-   
-  
- 
-  
-
+    }else if(computerScore>playerScore){
+    console.log ("COMPUTER WINS, YOU LOSE! and computer score:  " + computerScore + " &" + " playerScore: " + playerScore + " draw Score: " + drawScore); 
+    } 
+  }
+        game(); 
    
