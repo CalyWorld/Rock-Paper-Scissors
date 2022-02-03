@@ -1,0 +1,44 @@
+
+body{
+    background-color: black;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:500px;
+  }
+  #game{
+      background-color: black;
+  }
+#scoreWrapper{
+   display:flex;
+   justify-content: space-around;
+   background-color: darkred;
+   border: 2px solid slategrey;
+   padding:10px;
+   color:white;
+}
+
+#displayResult{
+    margin-top: 50px;
+    background: darkred;
+    padding:15px;
+    border: 2px solid slategrey;
+    color:white;
+}
+
+#button-wrapper{
+   
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    padding: 10px;
+    margin:50px;
+    
+}
+button{
+    padding:10px;
+    background-color:darkred;
+    color: white;
+    border: 2px solid slategrey;
+}
